@@ -3,7 +3,7 @@ Simple converter from html to json for [editor.js][editor]
 ## Installation
 
 ```bash
-go get github.com/LegGnom/html-to-editorjs
+go get github.com/ParkerJessica/html-to-editorjs
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ package main
 import (
 	"encoding/json"
     "fmt"
-    "github.com/LegGnom/html-to-editorjs"
+    "github.com/ParkerJessica/html-to-editorjs"
 )
 
 func main() {
@@ -83,8 +83,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/LegGnom/html-to-editorjs"
-	"github.com/LegGnom/html-to-editorjs/scheme"
+	"github.com/ParkerJessica/html-to-editorjs"
+	"github.com/ParkerJessica/html-to-editorjs/scheme"
 	"github.com/PuerkitoBio/goquery"
 )
 

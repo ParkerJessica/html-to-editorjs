@@ -1,11 +1,12 @@
 package html_to_editorjs
 
 import (
-	"github.com/LegGnom/html-to-editorjs/blocks"
-	"github.com/LegGnom/html-to-editorjs/helpers"
-	"github.com/LegGnom/html-to-editorjs/scheme"
-	"github.com/PuerkitoBio/goquery"
 	"time"
+
+	"github.com/ParkerJessica/html-to-editorjs/blocks"
+	"github.com/ParkerJessica/html-to-editorjs/helpers"
+	"github.com/ParkerJessica/html-to-editorjs/scheme"
+	"github.com/PuerkitoBio/goquery"
 )
 
 var blockHandlers = map[string][]scheme.BlockHandler{}
@@ -27,7 +28,6 @@ func RegistryAll() {
 	RegistryBlock("hr", blocks.Delimiter)
 	RegistryBlock("table", blocks.Table)
 }
-
 
 // ClearAllBlocks removes all block handlers
 func ClearAllBlocks() {

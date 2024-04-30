@@ -1,4 +1,4 @@
-module github.com/LegGnom/html-to-editorjs
+module github.com/ParkerJessica/html-to-editorjs
 
 go 1.16
 

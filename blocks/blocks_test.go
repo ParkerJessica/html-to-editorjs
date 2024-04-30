@@ -1,10 +1,11 @@
 package blocks
 
 import (
-	"github.com/LegGnom/html-to-editorjs/helpers"
-	"github.com/LegGnom/html-to-editorjs/scheme"
-	"github.com/PuerkitoBio/goquery"
 	"testing"
+
+	"github.com/ParkerJessica/html-to-editorjs/helpers"
+	"github.com/ParkerJessica/html-to-editorjs/scheme"
+	"github.com/PuerkitoBio/goquery"
 )
 
 func TestParagraph(t *testing.T) {

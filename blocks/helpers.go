@@ -1,9 +1,10 @@
 package blocks
 
 import (
-	"github.com/LegGnom/html-to-editorjs/scheme"
-	"github.com/PuerkitoBio/goquery"
 	"strconv"
+
+	"github.com/ParkerJessica/html-to-editorjs/scheme"
+	"github.com/PuerkitoBio/goquery"
 )
 
 func getImgFile(selection *goquery.Selection) scheme.BlockData {
