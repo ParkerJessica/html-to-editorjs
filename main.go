@@ -22,7 +22,7 @@ func RegistryAll() {
 	RegistryBlock("ul", blocks.List)
 	RegistryBlock("ol", blocks.List)
 	RegistryBlock("img", blocks.Image)
-	RegistryBlock("drupal-entity", blocks.DrupalEntityImage)
+	// RegistryBlock("drupal-entity", blocks.DrupalEntityImage)
 	RegistryBlock("figure", blocks.Image)
 	RegistryBlock("figure", blocks.Quote)
 	RegistryBlock("blockquote", blocks.Quote)
