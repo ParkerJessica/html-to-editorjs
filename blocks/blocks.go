@@ -71,14 +71,14 @@ func List(selection *goquery.Selection) *scheme.Block {
 func DrupalEntityImage(selection *goquery.Selection) *scheme.Block {
 	fmt.Println("DrupalEntityImage", selection)
 
-	// if file["url"] != nil {
-	// 	return &scheme.Block{
-	// 		Type: "image",
-	// 		Data: scheme.BlockData{
-	// 			"data-entity-uuid": file,
-	// 		},
-	// 	}
-	// }
+	if selection {
+		return &scheme.Block{
+			Type: "image",
+			Data: scheme.BlockData{
+				"data-entity-uuid": selection,
+			},
+		}
+	}
 
 	return nil
 }
