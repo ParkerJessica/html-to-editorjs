@@ -1,11 +1,13 @@
 package blocks
 
 import (
+	"fmt"
+	"strconv"
+	"strings"
+
 	"github.com/ParkerJessica/html-to-editorjs/helpers"
 	"github.com/ParkerJessica/html-to-editorjs/scheme"
 	"github.com/PuerkitoBio/goquery"
-	"strconv"
-	"strings"
 )
 
 func Paragraph(selection *goquery.Selection) *scheme.Block {
@@ -62,6 +64,22 @@ func List(selection *goquery.Selection) *scheme.Block {
 			},
 		}
 	}
+	return nil
+}
+
+// TODO handle drupal-entity image, currently it is skipped
+func DrupalEntityImage(selection *goquery.Selection) *scheme.Block {
+	fmt.Println("DrupalEntityImage", selection)
+
+	// if file["url"] != nil {
+	// 	return &scheme.Block{
+	// 		Type: "image",
+	// 		Data: scheme.BlockData{
+	// 			"data-entity-uuid": file,
+	// 		},
+	// 	}
+	// }
+
 	return nil
 }
 
