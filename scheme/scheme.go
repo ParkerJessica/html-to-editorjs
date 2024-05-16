@@ -19,3 +19,14 @@ type Block struct {
 	Type string      `json:"type"`
 	Data interface{} `json:"data"`
 }
+
+type ListicleImage struct {
+	Title   string `json:"title"`
+	Alt     string `json:"alt"`
+	Caption string `json:"caption"`
+	Src     string `json:"src"`
+	Credit  string `json:"credit"`
+	Height  string `json:"height"`
+	Width   string `json:"width"`
+	ID      string `json:"id"`
+}
